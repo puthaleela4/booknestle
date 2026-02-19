@@ -1,0 +1,162 @@
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+}
+
+.logo {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Role Tabs */
+.role-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+.role-tab {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #999;
+  cursor: pointer;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.role-tab.active {
+  color: #667eea;
+}
+
+.role-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #667eea;
+  border-radius: 3px 3px 0 0;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background: #764ba2;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.signup-link a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .role-tabs {
+    gap: 20px;
+  }
+}
